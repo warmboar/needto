@@ -4,13 +4,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 32em;
+  column-gap: 2em;
   padding: 0em;
-  margin-bottom: 4em;
+  margin-bottom: 1em;
   position:fixed;
-  z-index: 2;
+  z-index: 1;
   background-size: 100%;
-  justify-content: start;
+
 
 left:0;
 
@@ -26,9 +26,11 @@ width: 100%;
   width: 50px;
   height: 50px;
   position: relative;
-  margin: 10px auto;
-  z-index: 1;
-  
+  padding-right: 200px;
+  transform: translateX(-1000px);
+
+
+  margin-left: -200px;
 }
 
 .burger-button {
@@ -38,6 +40,7 @@ width: 100%;
   border: none;
   cursor: pointer;
   transform: translate(1px, 0px);
+    
 
 }
 
@@ -45,7 +48,7 @@ width: 100%;
 .burger-line {
   width: 80%;
   height: 4px;
-  background: rgba(147, 226, 0, 0.438);
+  background: rgba(219, 219, 219, 0.699);
   position: absolute;
   left: 10%;
   right: 10%;
@@ -84,6 +87,9 @@ width: 100%;
 
 
 .logo {
+  transform: translateX(200px);
+
+  margin-right: 400px;
   font-size: 24px;
   font-weight: bold;
   
@@ -92,8 +98,8 @@ width: 100%;
 .nav {
   display: flex;
   justify-content: start;
-  
   column-gap: 2em;
+  margin-right: 600px;
 }
 
 .grow {
@@ -103,6 +109,7 @@ width: 100%;
 a {
   color: white;
   text-decoration: none;
+  
 }
 
 a:hover {
@@ -244,7 +251,6 @@ img {
  
 
 }
-
 @media (min-width: 1200px) {
   
 }
@@ -255,30 +261,12 @@ img {
   
 }
 @media (min-width: 480px) and (max-width: 767px) {
-  .nav {
-    display: none;
-  }
-
-  .burger-button{
-    display: block;
-  }
-
-  }  
-
-  .header {
-    text-align: center;
-    margin: 0 auto;
-    display: inline-block;
+  
+ 
+ 
 }
 
 
 @media (min-width: 320px) and (max-width: 479px) {
-  .header {
-    text-align: center;
-    margin: 0 auto;
-    display: inline-block;
-}
-}
-@media (max-width: 320px) {
-  
+
 }
