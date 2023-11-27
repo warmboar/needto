@@ -1,3 +1,27 @@
+aside {
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+  transform: translate(10px, -10px);
+  font-family: 'Roboto', sans-serif;
+}
+
+aside > p {
+  margin: 0.5rem;
+}
+footer {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
 header {
   background-color: #3d91c2;
   color: white;
@@ -10,6 +34,7 @@ header {
   position:fixed;
   z-index: 1;
   background-size: 100%;
+  font-family: 'Roboto', sans-serif;
 
 
 left:0;
@@ -27,7 +52,7 @@ width: 100%;
   height: 50px;
   position: relative;
   padding-right: 200px;
-  transform: translateX(-1000px);
+  transform: translateX(190px);
 
 
   margin-left: -200px;
@@ -87,11 +112,12 @@ width: 100%;
 
 
 .logo {
-  transform: translateX(200px);
-
+  transform: translateX(10px);
+  cursor: pointer;
   margin-right: 400px;
-  font-size: 24px;
-  font-weight: bold;
+  width: 60px;
+  height: 60px;
+  
   
 }
 
@@ -99,7 +125,8 @@ width: 100%;
   display: flex;
   justify-content: start;
   column-gap: 2em;
-  margin-right: 600px;
+  transform: translateX(-200px);
+  
 }
 
 .grow {
@@ -148,32 +175,44 @@ h2 {
 
 
 .gallery {
-
+  font-family: 'Roboto', sans-serif;
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
     grid-auto-rows: 200px;
     grid-template-areas:"textone item";
     grid-gap: 100px; 
-
-    .textone{
+    
+}
+    .textone {
       transform: translate(350px, -190px);
+margin-left: 60px;
+word-break: break-all;
+overflow-wrap: break-word;
+hyphens: auto;
+position: absolute;
+
+
 
 }
 
 
 .texttwo{
-  justify-content: center; 
-  justify-items: start; 
-  margin: 10px;
+  transform: translate(-250px, -190px);
+  margin: 10 px;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
-}
+
 
 
   .textthree {
-    grid-column: 1 /* Указание, что этот элемент будет занимать первый и второй столбцы */
-    
-
+    transform: translate(330px, -190px);
+    margin: 10 px;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    hyphens: auto;
 
   }
   
@@ -186,9 +225,8 @@ grid-column: 2;
 
 
 .textfour{
-  transform: translate(-350px, -190px);
-  grid-column: 1
-
+  transform: translate(-250px, -190px);
+margin: 10 px;
 }
 
 .item{
@@ -252,21 +290,110 @@ img {
 
 }
 @media (min-width: 1200px) {
-  
+
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  
+   .burger-line {
+    width: 120%;
+    height: 3px;
+} 
+.burger-container {
+  transform: translateX(170px);
+
+}
+
 }
 @media (min-width: 768px) and (max-width: 991px) {
   
+  .burger-line {
+    width: 120%;
+    height: 3px;
+} 
+.burger-container {
+  transform: translateX(170px);
+
+}
+aside{
+  transform: translate(10px, -20px);
+
+}
 }
 @media (min-width: 480px) and (max-width: 767px) {
-  
- 
- 
+  .burger-line {
+    width: 120%;
+    height: 3px;
+} 
+.burger-container {
+  transform: translateX(170px);
+
+}
+aside{
+  transform: translate(10px, -20px);
+
+}
 }
 
 
 @media (min-width: 320px) and (max-width: 479px) {
+  .burger-line {
+    width: 120%;
+    height: 3px;
+} 
+.burger-container {
+  transform: translateX(170px);
 
+}
+aside{
+  transform: translate(-180px, 40px);
+
+}
+article{
+  transform: translate(-60px, 40px);
+
+}
+.item:nth-child(odd){
+  transform: translate(50px, 40px);
+
+
+}
+.item:nth-child(even) { 
+  transform: translate(285px, 40px);
+
+
+}
+.textone{
+  transform: translate(100px, -190px);
+  word-break: break-all;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  
+}
+
+.texttwo{
+  transform: translate(165px, -190px);
+  word-break: break-all;
+  overflow-wrap: break-word;
+  hyphens: auto;
+
+}
+.textthree{
+  word-break: break-all;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  transform: translate(165px, -190px);
+}
+  
+
+  .textfour{
+    word-break: break-all;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    transform: translate(165px, -190px);
+  }
+  .logo{
+
+    width: 30px;
+  height: 30px;
+
+  }
 }
